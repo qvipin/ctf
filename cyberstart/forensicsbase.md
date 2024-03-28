@@ -1,6 +1,6 @@
 # Forensics Base
 
-- L2C3 ****Trojan Horse
+- L2C3 Trojan Horse
     - All startup apps run in `SOFTWARE\Microsoft\Windows\CurrentVersion\Run` and I found a malicious process
     
     Flag: 1238HgulsjtuwGF
