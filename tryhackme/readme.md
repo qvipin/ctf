@@ -15,7 +15,7 @@ Almost every THM room I do has a writeup in my website, except a few which I don
 | **Basic Pentesting**   | **WIP (Github)**                                                                 |
 | **Wgel CTF**           | **Not Started (Website)**                                                        |
 | **Lian_Yu**            | **Not Started (Website)**                                                        |
-| **BoilerCTF**          | Not Started **(Website)**                                                        |
+| **BoilerCTF**          | **Not Started (Website)**                                                        |
 | **Chocolate Factory**  | **Not Started (Github)**                                                         |
 | **Blog**               | **Not Started (Website)**                                                        |
 | **Koth Machines**      | **WIP (Website)**                                                                |
