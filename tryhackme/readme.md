@@ -12,10 +12,11 @@ Almost every THM room I do has a writeup in my website, except a few which I don
 | **Agent Sudo**         | [https://www.vipinb.xyz/blog/agentsudo](https://www.vipinb.xyz/blog/agentsudo)   |
 | **Pickle Rick**        | [https://www.vipinb.xyz/blog/picklerick](https://www.vipinb.xyz/blog/picklerick) |
 | **Space Jam (KOTH)**   | [https://www.vipinb.xyz/blog/spacejam](https://www.vipinb.xyz/blog/spacejam)     |
-| **Basic Pentesting**   | **WIP (Github)**                                                                 |
+| **Basic Pentesting**   | [Writeup](https://github.com/qvipin/ctf/blob/main/tryhackme/Basic_Pentesting.md) |
 | **Wgel CTF**           | **Not Started (Website)**                                                        |
 | **Lian_Yu**            | **Not Started (Website)**                                                        |
 | **BoilerCTF**          | **Not Started (Website)**                                                        |
 | **Chocolate Factory**  | **Not Started (Github)**                                                         |
 | **Blog**               | **Not Started (Website)**                                                        |
 | **Koth Machines**      | **WIP (Website)**                                                                |
+https://github.com/qvipin/ctf/blob/main/tryhackme/Basic_Pentesting.md
