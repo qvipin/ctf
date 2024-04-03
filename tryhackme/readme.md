@@ -19,4 +19,3 @@ Almost every THM room I do has a writeup in my website, except a few which I don
 | **Chocolate Factory**  | **Not Started (Github)**                                                         |
 | **Blog**               | **Not Started (Website)**                                                        |
 | **Koth Machines**      | **WIP (Website)**                                                                |
-https://github.com/qvipin/ctf/blob/main/tryhackme/Basic_Pentesting.md
