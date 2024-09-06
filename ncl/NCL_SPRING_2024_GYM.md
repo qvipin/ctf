@@ -245,7 +245,8 @@
     abe6591e06aafc3cf1b0783b120f685e:manhunt74:MD5
     ```
     
-- PDF (Medium) (come back to this)
+- PDF (Medium) Took way tooo long to crack but the password was keanureeves2008 and the flag inside was SKY-KANU-5902
+    - The process to crack is pretty simple just takes a long time pdf2john > remove pdf prefix > run `hashcat -m 10700 -a 0 pdfhash.txt rockyou.txt` > and you should have the flag in 2 hours or smth 
 - Kali Linux (Hard) (come back to this
     - hollie is the user w/ the password and using the UNIX EPOCH we can find the date (2021-11-03) and
 
