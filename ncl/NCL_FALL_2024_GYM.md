@@ -308,6 +308,20 @@
     
 - VSFTPD (Easy)
     - Once again just read the logs
+
+### Enumeration & Exploitaiton
+- Binary 1 (Medium)
+    ```bash
+    ❯ ./RE1_64bit 7074
+    Please enter a password: DX;O3\x85\xcf\xdda\xbf\xb0\x9d\x04\xab\xd9\xa9G\x15)\x02\x8cl\x9bq"\xd2y\xc2n\xfe\x88
+    your tid: 7074
+    NCL-EZOF-4024
+    qemu: uncaught target signal 11 (Segmentation fault) - core dumped
+    [1]    2973 segmentation fault  ./RE1_64bit 7074
+    ````
+    
+    Flag: `NCL-EZOF-4024`
+
     
 
 ### Scanning & Reconnaissance
@@ -318,5 +332,9 @@
 
 - egov (Easy)
     - Change the admin cookie to true and go to `/admin` to get the flag (varied flag)
+ 
+- Never Winter Bank (Easy) 
+    - first question go to robots.txt to find the path
+    - second question input 0100 into the transfer box to get flag
 
-# UNFINISHED (Last Updated 3/5/24)
+# UNFINISHED (Last Updated 9/9/24)
