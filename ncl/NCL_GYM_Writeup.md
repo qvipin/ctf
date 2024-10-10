@@ -215,9 +215,10 @@
     - I did this NCL Gym challenge before so I still have my custom wordlist. (just search up pokemon wordlist and u can crack them too or use [hashes.com](http://hashes.com) for an easy way out)
     - (sorry no answer forgor to put them and to lazy to get them)
 - Windows (Medium)
-    - [Hashes.com](http://Hashes.com) and all ntlm so u can use hashcat.
+    - [Hashes.com](http://Hashes.com) and all ntlm so i used oph crack cus its simpler.
         
         ```bash
+        # hashes.com
         11cb3f697332ae4c4a3b108f3fa6cb6d:p@ssword
         13b29964cc2480b4ef454c59562e675c:P@ssword
         21c4e7c2efe8e8d1c00b70065ed76aa7:ECTOPLASM32
@@ -231,8 +232,17 @@
         c8405270b10b13ae8a24612bb853567a:yhM^GK7
         f196f77bf8bb15781ba8364c649c5fd4:58?-<C6
         fd134459fe4d3a6db4034c4e52403f16:"=Cxu&L
-        
         ```
+
+        ```txt
+        # oph crack
+        ::E85B4B634711A266AAD3B435B51404EE:FD134459FE4D3A6DB4034C4E52403F16:"=CXU&L::"=Cxu&L
+        ::BA756FB317B622DBAAD3B435B51404EE:C8405270B10B13AE8A24612BB853567A:YHM^GK7::yhM^GK7
+        ::199C926FA387EAB7AAD3B435B51404EE:F196F77BF8BB15781BA8364C649C5FD4:58?-<C6::58?-<C6
+        ::FE4AACAAAD7D986AAAD3B435B51404EE:3928E16F614E2316CA51C336FA5B3011:$XEN@=Y::$xEn@=y
+        ::3613F7EC15407F56AAD3B435B51404EE:C82E164316183AA3AF3EA6BAA642A237:^B7E3D;::^B7e3D;
+        ```
+
         
 - Law & Order (Hard)
     - [Hashes.com](http://Hashes.com) carried!
