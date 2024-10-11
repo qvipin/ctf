@@ -257,8 +257,24 @@
     
 - PDF (Medium) Took way tooo long to crack but the password was keanureeves2008 and the flag inside was SKY-KANU-5902
     - The process to crack is pretty simple just takes a long time pdf2john > remove pdf prefix > run `hashcat -m 10700 -a 0 pdfhash.txt rockyou.txt` > and you should have the flag in 2 hours or smth 
-- Kali Linux (Hard) (come back to this
-    - hollie is the user w/ the password and using the UNIX EPOCH we can find the date (2021-11-03) and
+- Kali Linux (Hard) 
+    - hollie is the user w/ the password and using the UNIX EPOCH we can find the date (2021-11-03) and the password was cracked by placing the shadow line with the password and running below
+ ```bash
+┌──(hollie㉿kali)-[~]
+└─$ john hash.txt --format=crypt
+Using default input encoding: UTF-8
+Loaded 1 password hash (crypt, generic crypt(3) [?/64])
+Cost 1 (algorithm [1:descrypt 2:md5crypt 3:sunmd5 4:bcrypt 5:sha256crypt 6:sha512crypt]) is 0 for all loaded hashes
+Cost 2 (algorithm specific iterations) is 1 for all loaded hashes
+Will run 4 OpenMP threads
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:04 32.60% 1/3 (ETA: 22:01:07) 0g/s 161.5p/s 161.5c/s 161.5C/s h0llie..q99999
+hollie03         (hollie)     
+1g 0:00:00:08 DONE 1/3 (2024-10-10 22:01) 0.1194g/s 160.5p/s 160.5c/s 160.5C/s hollie9999917..Hollie9999911
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+```
 
 ### Forensics
 
@@ -347,4 +363,4 @@
     - first question go to robots.txt to find the path
     - second question input 0100 into the transfer box to get flag
 
-# UNFINISHED (Last Updated 9/9/24)
+# UNFINISHED (Last Updated 10/10/24)
