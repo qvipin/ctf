@@ -285,6 +285,16 @@ Session completed.
     - When changing the docx file to a .zip it shows the contents and media inside and inside the `/media` folder we find `image0.png` which has the flag `SKY-RATL-8439`
 - File Carving (Medium)
     - Binwalk the image to get 4 pngs and 1 zip out of it and there are 6 files in total in the png and the zip has the flag (SKY-RWCI-4291)
+- The Book (Hard)
+What operating system was this dump taken from?: Windows (Figured that out from `file memdump.mem`
+What is the name of the computer?: DESKTOP-OT97GG3 (solved with `vol -f memdump.mem windows.registry.printkey --offset 0xc00154a3e000 --key "ControlSet001\\Control\\`
+What is the name of the user that was logged in?: liber8hacker (many ways to figure out by looking at hashdump or just files `vol -f memdump.mem windows.hashdump.Hashdump`)
+What is the real name of "cloud"?: gloria hampton (downloaded black_book.db with `vol -f memdump.mem windows.dumpfile --virtaddr 0xe0003e836f20` )
+What is the full filepath and file of the file in interest?: \Users\liber8hacker\Desktop\black_book.db (figured out it was interesting when it had the user clouds name)
+What is the password of the currently logged in user?: avatar2 (used `vol -f memdump.mem windows.hashdump.Hashdump` to hash dump and cracked the password with hashes.com)
+
+TOO EASY!!!!
+
 
 ### Enumeration & Exploitation
 
