@@ -257,7 +257,10 @@ Session completed.
 #### VSFTPD (Easy)
 - Similar to the SSH section, the logs provide necessary information.
 
+#### Custom File Format 
+
 ### Web Application Exploitation
+See customfileformat.py, this is the script that answers all the questions.
 
 #### Egov (Easy)
 - Modify the admin cookie to `true` and navigate to `/admin` to obtain the flag (which may vary).
