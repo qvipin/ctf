@@ -16,6 +16,6 @@ Almost every THM room I do has a writeup in my website, except a few which I don
 | **Wgel CTF**           | **Not Started (Website)**                                                        |
 | **Lian_Yu**            | **Not Started (Website)**                                                        |
 | **BoilerCTF**          | **Not Started (Website)**                                                        |
-| **Chocolate Factory**  | [Chocolate_factory.md](https://github.com/qvipin/ctf/blob/main/tryhackme/chocolate_factory.md |
+| **Chocolate Factory**  | [Chocolate_factory.md](https://github.com/qvipin/ctf/blob/main/tryhackme/chocolate_factory.md) |
 | **Blog**               | **Not Started (Website)**                                                        |
 | **Koth Machines**      | **WIP (Website)**                                                                |
