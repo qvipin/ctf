@@ -38,7 +38,7 @@ Let's look at decompilation of the server binary...
 
 ```
 
-Classic Ret2win, we `gets()` is incredibly vulnerable, we overflow the stack and fly into win. We need an offset though, Binja has us covered!
+Classic Ret2win, `gets()` is incredibly vulnerable, we overflow the stack and fly into win. We need an offset though, Binja has us covered!
 
 ![x](imgs/image.png)
 
