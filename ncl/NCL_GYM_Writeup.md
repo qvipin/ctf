@@ -20,6 +20,8 @@
     - **Answer:** Apple
   - **What is the model of the camera that took the picture?**
     - **Answer:** Apple iPhone 5
+  - **What is the exposure time for the picture? (ex: 1/200)**
+    - **Answer:** 1/640
   - **What are the GPS coordinates where the picture was taken?** (Any standard format is acceptable)
     - **Answer:** 39 deg 52' 30.00" N, 20 deg 0' 36.00" E
 
@@ -225,7 +227,7 @@ print(''.join(chr(m) for m in msg))
     4. The flag was obtained after approximately 2 hours.
 
 ### Kali Linux (Hard)
-- The user **hollie** had a password cracked using the UNIX EPOCH, which revealed the date **2021-11-03**. The cracking was performed by adding the shadow line with the password and executing the following command:
+- The user **hollie** had a password cracked using the UNIX EPOCH, which revealed the date **2021-11-03**. The salt is `/WzixhAsn8sdXhCquYzh01` and the hash digest is `KZlio78LilItobsx/17ecFf1e2SbsduhP1sZEWuHrL4`. The cracking was performed by adding the shadow line with the password and executing the following command:
 ```bash
 ┌──(hollie㉿kali)-[~]
 └─$ john hash.txt --format=crypt
@@ -248,11 +250,39 @@ Session completed.
 #### Version Control (Easy)
 - Run `ls -la` after unzipping and `cd` into `.git` to find relevant information. To locate the employee’s email, check `/.git/logs/HEAD`.
 
+- **What is the email address of the employee who was compromised?**
+  - `gpeterson@mpd.hacknet.cityinthe.cloud`
+- **Each employee is assigned a flag. What is the flag that was compromised?**
+  - `SKY-LRHX-4910`
+- **Greg thinks that he may have had additional account credentials that were compromised. What's the name of the service provider for that other compromised account?**
+  - `Facebook`
+- **What was the password on that compromised account?**
+  - `waffles85`
+
+
+
 #### Doctor (Medium)
 - By changing the `.docx` file extension to `.zip`, the contents can be accessed. Inside the `/media` folder, `image0.png` contains the flag **SKY-RATL-8439**.
 
+### Magic Bytes (Medium)
+- **What is the original file type?**
+  - `png`
+- **What is the flag?**
+  - `SKY-DSFG-5792`
+
+
 #### File Carving (Medium)
-- Using **Binwalk** on the image resulted in 4 PNG files and 1 ZIP. The flag can be found within the ZIP, which contains a total of 6 files. The flag is **SKY-RWCI-4291**.
+- Using **Binwalk** on the image (PNG) resulted in 4 PNG files and 1 ZIP. The flag can be found within the ZIP, which contains a total of 6 files. The flag is **SKY-RWCI-4291**.
+
+#### PDF (Easy)
+- **What is the name of the program that exported this PDF file?**
+  - `Adobe Photoshop CC 2019`
+- **What PDF version is this file?**
+  - `1.7`
+- **What software was used to redact the file and insert a watermark?**
+  - `PDFTRON`
+- **What is the flag?**
+  - `SKY-PDRD-2390`
 
 #### The Book (Hard)
 - **Operating System:** Windows (determined using `file memdump.mem`)
@@ -281,13 +311,37 @@ Session completed.
     - **Targeted User:** harvey
     - **Successful Login IP Address:** 30.167.206.91
 
+# Nginx (Medium)
+
+- **How many different IP addresses reached the server?**  
+  - `47`
+- **How many requests yielded a 200 status?**  
+  - `Answer...`
+- **How many requests yielded a 400 status?**  
+  - `Answer...`
+- **What IP address rang at the doorbell?**  
+  - `Answer...`
+- **What version of the Googlebot visited the website?**  
+  - `Answer...`
+- **Which IP address attempted to exploit the shellshock vulnerability?**  
+  - `Answer...`
+- **What was the most popular version of Firefox used for browsing the website?**  
+  - `Answer...`
+- **What is the most common HTTP method used?**  
+  - `Answer...`
+- **What is the second most common HTTP method used?**  
+  - `Answer...`
+- **How many requests were for `\x04\x01\x00P\xC6\xCE\x0Eu0\x00`?**  
+  - `Answer...`
+
 #### VSFTPD (Easy)
 - Similar to the SSH section, the logs provide necessary information.
 
 #### Custom File Format 
+See customfileformat.py, this is the script that answers all the questions.
+
 
 ### Web Application Exploitation
-See customfileformat.py, this is the script that answers all the questions.
 
 #### Egov (Easy)
 - Modify the admin cookie to `true` and navigate to `/admin` to obtain the flag (which may vary).
