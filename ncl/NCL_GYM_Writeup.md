@@ -294,6 +294,28 @@ Session completed.
 
 ### Enumeration & Exploitation
 
+#### Python 1 (Easy)
+- **What is an input to this program that will result in a correct validation?**
+  - `fSeeeeeeel`
+  
+#### Binary 1 (Medium)
+Patch the binary at this line
+
+```nasm
+004008e4  837dfc01           cmp     dword [rbp-0x4 {var_c}], 0x0
+```
+
+to
+
+```nasm
+004008e4  837dfc01           cmp     dword [rbp-0x4 {var_c}], 0x1
+```
+
+Which will ensure no matter what password you put, it will always evaluate your tid to a flag
+
+flag: `NCL-EZOF-4024`
+
+
 #### Timebomb (Easy)
 - Decompiling the Java program yields the following answers:
     - **Programming Language:** Java
@@ -316,23 +338,68 @@ Session completed.
 - **How many different IP addresses reached the server?**  
   - `47`
 - **How many requests yielded a 200 status?**  
-  - `Answer...`
+  - `19`
 - **How many requests yielded a 400 status?**  
-  - `Answer...`
+  - `38`
 - **What IP address rang at the doorbell?**  
-  - `Answer...`
+  - `186.64.69.141`
 - **What version of the Googlebot visited the website?**  
-  - `Answer...`
+  - `Googlebot/2.1.`
 - **Which IP address attempted to exploit the shellshock vulnerability?**  
-  - `Answer...`
+  - `61.161.130.241`
 - **What was the most popular version of Firefox used for browsing the website?**  
-  - `Answer...`
+  - `31.0`
 - **What is the most common HTTP method used?**  
-  - `Answer...`
+  - `GET`
 - **What is the second most common HTTP method used?**  
-  - `Answer...`
+  - `CONNECT`
 - **How many requests were for `\x04\x01\x00P\xC6\xCE\x0Eu0\x00`?**  
+  - `6`
+
+#### History (Medium)
+- **What did the user search for on Craigslist?**  
+  - `bitcoin`
+- **What was the current price of Bitcoin when the user was browsing?**  
+  - `239.5`
+- **What Bitcoin exchange did the user log in to?**  
+  - `Coinbase`
+- **What is the email that was used to log into the exchange?**  
+  - `b1gbird@gmail.com`
+- **What was the ID of the Bitcoin transaction that the user looked at?**  
+  - `5274cfba585a4b5681527a37f95c76340428916bb7480cef6c545f0a28dcd2d7`
+- **What was the total BTC of all the inputs of the Bitcoin transaction?**  
+  - `0.22616302`
+- **Which Bitcoin address received the majority of the Bitcoin in the transaction?**  
+  - `18z6bTFjxkXCmhfp8YBetR2wgmoVjXGJZz`
+
+#### Squid (Hard)
+- **In what year was this log saved?**  
+  - `2010`
+- **How many milliseconds did the fastest request take?**  
+  - `5`
+- **How many milliseconds did the longest request take?**  
+  - `41762`
+- **How many different IP addresses did the proxy service in this log?**  
+  - `4`
+- **How many GET requests were made?**  
+  - `35`
+- **How many POST requests were made?**  
+  - `78`
+- **What company created the antivirus used on the host at 192.168.0.224?**  
+  - `Symantec`
+- **What URL is used to download an antivirus update?**  
+  - `http://liveupdate.symantecliveupdate.com/streaming/norton$202009$20streaming$20virus$20definitions_1.0_symalllanguages_livetri.zip`
+
+#### Payments (Hard) (100 points)  
+**Cyber Command**  
+*A payment transaction log was compromised in a data breach. Help us determine what information was stolen.*
+
+- **How many transactions are contained in the log?**  
+  - `192`
+- **What is the transaction ID of the largest purchase made in the log?**  
   - `Answer...`
+- **Which state made the greatest number of purchases?**  
+  - `MA`
 
 #### VSFTPD (Easy)
 - Similar to the SSH section, the logs provide necessary information.
@@ -350,4 +417,4 @@ See customfileformat.py, this is the script that answers all the questions.
 - The first question involves accessing `robots.txt` to find a relevant path.
 - The second question requires inputting `0100` into the transfer box to retrieve the flag.
 
-# UNFINISHED (Last Updated 10/22/24)
+# UNFINISHED (Last Updated 03/20/25)
