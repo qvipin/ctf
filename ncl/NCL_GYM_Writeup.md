@@ -117,6 +117,33 @@
   ```
 - **Found Flag:** SKY-TVJI-2063
 
+####  RSA (Hard)
+
+`factor()` in sage to get primes
+
+- **P** = 13
+- **q** = 83 
+
+Flag is `SKY-KRYG-5530`
+
+Solution:
+
+```python
+from Crypto.Util.number import bytes_to_long, long_to_bytes, getPrime
+
+ct = [996, 894, 379, 631, 894, 82, 379, 852, 631, 677, 677, 194, 893]
+e = 43
+p = 13
+q = 83
+n = 1079
+assert p*q == n # jus to check if p & q are right
+
+phi = (p-1)*(q-1)
+d = pow(e, -1, phi)
+msg = [pow(c, d, n) for c in ct]
+print(''.join(chr(m) for m in msg))
+```
+
 ---
 
 ### Password Cracking
